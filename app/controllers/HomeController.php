@@ -45,8 +45,6 @@ class HomeController extends BaseController
             'value' => 0
         ]);
 
-//        dd($modelPayload);
-//
         return View::make('transaction.show')
             ->with('payload', $data->inputs[0]->prev_out)
             ->with('newblock', $data->out)

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    index
+    Transaction   {{ $payload->addr ?: 'no addr' }}
 @stop
 
 @section('content')
