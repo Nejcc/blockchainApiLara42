@@ -1,0 +1,37 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "### require",
+  "main": "tailwind.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.0",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-postcss": "^8.0.0",
+    "live-server": "^1.2.1",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0",
+    "purgecss": "^2.1.0",
+    "tailwindcss": "^1.2.0",
+    "watch": "^1.0.2",
+    "webpack": "^4.42.0"
+  },
+  "scripts": {
+    "build": "npx tailwindcss build tailwindcss.css -o public/assets/css/styles.css",
+    "build:css": "postcss tailwindcss.css -o public/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nejcc/blockchainApiLara42.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nejcc/blockchainApiLara42/issues"
+  },
+  "homepage": "https://github.com/Nejcc/blockchainApiLara42#readme"
+}
