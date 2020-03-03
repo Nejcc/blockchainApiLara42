@@ -19,7 +19,7 @@ class HomeController extends BaseController
      */
     public function index()
     {
-        $model = DB::table('transactions')->orderBy('id', 'desc')->get();
+        $model = DB::table('transactions')->orderBy('id', 'desc')->paginate(5);
         return $this->layout->content = View::make('transaction.index', compact('model'));
     }
 

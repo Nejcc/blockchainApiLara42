@@ -46,6 +46,9 @@
                 </div>
             </a>
         @endforeach
+
+        {{ $model->links('partials.pagination') }}
+
         <div class="text-center">
             <a href="#" onClick="appendToinput('b6f6991d03df0e2e04dafffcd6bc418aac66049e2cd74b80f14ac86db1e3f0da'); return false" class="mt-6 text-center">default: b6f6991d03df0e2e04dafffcd6bc418aac66049e2cd74b80f14ac86db1e3f0da</a>
         </div>
