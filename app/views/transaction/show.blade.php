@@ -21,7 +21,7 @@
     </div>
     <h3 class="w-full mx-auto text-center mb-4">New block of this transaction</h3>
     @foreach($newblock as $block)
-        <div class="w-full max-w-lg mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 block">
+        <div class="w-full max-w-xl mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 block">
             <div>
                 <h5 class="inline-flex">Addr:</h5>
                 <p class="inline-flex">
