@@ -8,7 +8,6 @@ use App\Requests\TransactionRequest;;
 
 class HomeController extends BaseController
 {
-
     protected $rules = [
         'hash' => ['required'],
     ];
@@ -20,9 +19,7 @@ class HomeController extends BaseController
      */
     public function index()
     {
-        $model = DB::table('transactions')->get();
-
-//        dd($model);
+        $model = DB::table('transactions')->orderBy('id', 'desc')->get();
         return $this->layout->content = View::make('transaction.index', compact('model'));
     }
 
@@ -45,10 +42,10 @@ class HomeController extends BaseController
             'value' => 0
         ]);
 
+
         return View::make('transaction.show')
-            ->with('payload', $data->inputs[0]->prev_out)
+//            ->with('payload', (!empty($data->inputs[0]->prev_out)) ? $data : '')
             ->with('newblock', $data->out)
             ->with('raw', $data);
     }
-
 }
