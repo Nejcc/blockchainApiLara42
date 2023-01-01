@@ -17,7 +17,7 @@
     "purgecss": "^2.1.0",
     "tailwindcss": "^1.2.0",
     "watch": "^1.0.2",
-    "webpack": "^4.42.0"
+    "webpack": "^5.75.0"
   },
   "scripts": {
     "build": "npx tailwindcss build tailwindcss.css -o public/assets/css/styles.css",
